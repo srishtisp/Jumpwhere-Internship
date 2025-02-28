@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tutorial</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="nav-bar">
+        <div class="container">
+            <a class="logo" href="#">Wavy<span>Ivy</span></a>
+            <img id="mobile-cta" class="mobile-menu" src="images/burger-menu.png" alt="Menu for mobile" height="15px">
+            <nav>
+                <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Close button" height="20">
+                <ul class="primary-nav">
+                    <li class="current"><a href="#">Home</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Pricing</a></li>
+                </ul>
+
+                <ul class="secondary-nav">
+                    <li><a href="#">Contact Us</a></li>
+                    <li class="go-premium-cta"><a href="#">Go Premium</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <section class="hero">
+        <div class="container">
+            <div class="left-col">
+                <p class="subhead"> It's Nitty and Gritty</p>
+                <h1>One stop shop for your plants</h1>
+                <div class="hero-cta">
+                    <a href="#" class="primary-cta">Try it for free</a>
+                    <a href="#" class="watch-cta">
+                        <p class="hero">
+                            <img src="images/video-icon1.svg" alt="Watch a video" height="30"> Watch a video
+                        </p>
+                    
+                    </a>
+                </div>
+            </div>
+            <img src="images/plant.svg" class="hero-img" alt="Plant">
+        </div>
+    </section>
+    <section class="features-section">
+        <div class="container">
+            <ul class="features-list">
+                <li>Feature 1</li>
+                <li>Feature 2</li>
+                <li>Feature 3</li>
+                <li>Feature 4</li>
+                <li>Feature 5</li>
+                <li>Feature 6</li>
+            </ul>
+            <img src="images/peopleplant.jpg" alt="'People holding plants" height="500">
+        </div>
+    </section>
+    <section class="testimonial-section">
+        <div class="container">
+            <ul>
+                <li>
+                    <img src="images/person.svg" alt="Person">
+                    <blockquote>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, error! Aliquid qui eos ullam, totam suscipit, consequuntur tenetur commodi laudantium asperiores quae adipisci, error recusandae maiores unde exercitationem non magni!</blockquote>
+                    <cite>- Jane Doe</cite>
+                </li>
+                <li>
+                    <img src="images/person.svg" alt="Person">
+                    <blockquote>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, error! Aliquid qui eos ullam, totam suscipit, consequuntur tenetur commodi laudantium asperiores quae adipisci, error recusandae maiores unde exercitationem non magni!</blockquote>
+                    <cite>- Jane Doe</cite>
+                </li>
+                <li>
+                    <img src="images/person.svg" alt="Person">
+                    <blockquote>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, error! Aliquid qui eos ullam, totam suscipit, consequuntur tenetur commodi laudantium asperiores quae adipisci, error recusandae maiores unde exercitationem non magni!</blockquote>
+                    <cite>- Jane Doe</cite>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="contact-section">
+        <div class="contact-left">
+            <h2>Contact</h2>
+            <form action="">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name"> 
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                <input type="submit" class="send-message-cta" value="Send message">
+            </form>
+        </div>
+        <div class="contact-rig">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52871.827034307404!2d-118.39953390000001!3d34.0826065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bc04d6d147ab%3A0xd6c7c379fd081ed1!2sBeverly%20Hills%2C%20CA%2C%20USA!5e0!3m2!1sen!2sin!4v1740122099929!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <a href="#" class="logo">Wavy<span>Ivy</span></a>
+                <ul class="footer-nav">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <div class="social-links">
+                    <a href="#"><img src="images/facebook.svg" alt="Facebook"></a>
+                    <a href="#"><img src="images/twitter.svg" alt="Twitter"></a>
+                    <a href="#"><img src="images/instagram.svg" alt="Instagram"></a>
+                </div>
+                <p>&copy; 2025 Wavy Ivy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const mobileBtn = document.getElementById("mobile-cta");
+        nav = document.querySelector('nav');
+        mobileBtnExit = document.getElementById('mobile-exit');
+
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })
+    </script>
+</body>
+</html>
